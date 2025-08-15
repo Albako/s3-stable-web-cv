@@ -2,9 +2,11 @@
 Strona została w pełni postawiona w S3 w chmurze AWS. Przedstawia ona krótki opis moich dotychczasowych osiągnięć.
 
 ## Architektura
-Strona została napisana w html. Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
-1. **`Amazon S3 bucket`**: Na nim znajdują się wymagane pliki do hostowania strony
-2. **`Amazon CloudFront`**: Dzięki niemu pliki znajdujące sie w **`S3`** są hostowane jako strona **`www`**
+Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
+1. **`Amazon S3 bucket`**: Na nim znajdują się wymagane pliki do hostowania strony.
+2. **`Amazon CloudFront`**: Dzięki niemu pliki znajdujące sie w **`S3`** są hostowane jako strona **`www`**.
+3. **`index.html`**: Zawartość strony.
+4. **`style.css`**: Styl strony.
 
 ## Aktywny link
 Moje **`CV`** można zobaczyć pod linkiem:
@@ -12,3 +14,13 @@ Moje **`CV`** można zobaczyć pod linkiem:
 ```
 https://d2wbjk2ar3yew1.cloudfront.net/
 ```
+
+## Jak postawić statyczną stronę, korzystająć z AWS?
+W twoim koncie **`AWS`** należy zrobić następujące czynności:
+1. **`Amazon S3`**: Należy stworzyć własny 'bucket', do którego wyślemy nasze pliki odpowiedzialne za stronę **`www`**. **`S3`** nie musi być duży (tzn. nie musi mieć dużej pojemności), będziemy go wykorzystywać tylko w jednym celu - hostowanie strony **`www`** - więc 1GB pojemności to aż za dużo. Przy tworzeniu 'bucket-a', należy się upewnić, że mamy wybrany poprawny **`AWS Region`** (tzn. najbliższy nam), a także że mamy włączoną funkcję **`Block Public Access settings for this bucket`**, ponieważ mimo tego, że chcemy stworzyć własną publiczną stronę internetową, to nie chcemy, żeby zawartość naszego 'bucket' była publicznie dostępna (nawet jeśli nic tam nie mamy, mimo naszych plików **`.html`** i **`.css`**).
+2. **`Amazon CloudFront`**: Nasz pośrednik między użytkownikami a Twoim **`S3`**. By wszystko poprawnie zostało stworzone, należy stworzyć dystrybucję **`CloudFront`**. W sekcji **`Origin domain`** powinniśmy wskazać nasz **`S3`** (może nie wyświetlać się na liście, wtedy trzeba będzie utworzyć **`URL`**, który może wyglądać następująco:
+
+```
+moj-s3-1234.s3.eu-central-1.amazonaws.com
+```
+   Dodatkowo należy zmienić ustawienie **`Default root object`**. W tej sekcji należy wskazać plik **`index.html`** by po wejściu w link nasza dystrybucja **`CloudFront`** automatycznie uruchamiała stronę, korzystając z tego właśnie pliku. Ostatnie co nam zostało to skopiowanie adresu **`URL`**, który wyświetla się w sekcji **`Distribution domain name`** (taki adres powinien wyglądać podobnie do tego **`d12345abcdef.cloudfront.net`**) i gotowe, możemy udostępnić link, dzięki któremu każdy z dostępem do internetu będzie mógł zobaczyć naszą statyczną stronę **`www`**.
