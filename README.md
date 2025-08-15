@@ -5,3 +5,10 @@ Strona została w pełni postawiona w S3 w chmurze AWS. Przedstawia ona krótki 
 Strona została napisana w html. Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
 1. **`Amazon S3 bucket`**: Na nim znajdują się wymagane pliki do hostowania strony
 2. **`Amazon CloudFront`**: Dzięki niemu pliki znajdujące sie w **`S3`** są hostowane jako strona **`www`**
+
+## Aktywny link
+Moje **`CV`** można zobaczyć pod linkiem:
+
+```
+https://d2wbjk2ar3yew1.cloudfront.net/
+```
