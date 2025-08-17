@@ -5,8 +5,10 @@ Strona została w pełni postawiona w S3 w chmurze AWS. Przedstawia ona krótki 
 Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
 1. **`Amazon S3 bucket`**: Na nim znajdują się wymagane pliki do hostowania strony.
 2. **`Amazon CloudFront`**: Dzięki niemu pliki znajdujące sie w **`S3`** są hostowane jako strona **`www`**.
-3. **`index.html`**: Zawartość strony.
-4. **`style.css`**: Styl strony.
+3. **`Amazon Route 53`**: Dzięki temu serwisowi udało mi wykupić alternatywną domenę (zamiast generycznego linku od **`CloudFront`** mój link jest bardziej profesjonalny).
+4. **`Ammazon Certificates`**: Bez certyfikatu wykupionego w tej usłudze, nie udało by mi się uruchomić mojej strony pod customową domeną.
+5. **`index.html`**: Zawartość strony.
+6. **`style.css`**: Styl strony.
 
 ## Aktywny link
 Moje **`CV`** można zobaczyć pod linkiem:
@@ -24,3 +26,5 @@ W twoim koncie **`AWS`** należy zrobić następujące czynności:
 moj-s3-1234.s3.eu-central-1.amazonaws.com
 ```
    Dodatkowo należy zmienić ustawienie **`Default root object`**. W tej sekcji należy wskazać plik **`index.html`** by po wejściu w link nasza dystrybucja **`CloudFront`** automatycznie uruchamiała stronę, korzystając z tego właśnie pliku. Ostatnie co nam zostało to skopiowanie adresu **`URL`**, który wyświetla się w sekcji **`Distribution domain    name`** (taki adres powinien wyglądać podobnie do tego **`d12345abcdef.cloudfront.net`**) i gotowe, możemy udostępnić link, dzięki któremu każdy z dostępem do internetu będzie mógł zobaczyć naszą statyczną stronę **`www`**.
+
+3. **`Amazon Route 53`** i **`Amazon Certificates`**: Dzięki tym usługom udało mi się hostować moją stronę pod customowym linkiem, lepiej wyglądającym niż generyczny link od **`Amazon CloudFront`**. Nie ma nic złego z pominięciem tego kroku, jednakże jeśli chcemy, by nasz link wyglądał na spersonalizowany i choć troche profesjonalny, to polecam skorzystać z owych usług. Wpierw należy w **`Route 53`** wpisać domenę jaka nas interesuje, sprawdzić czy jest dostępna i ile kosztuje. Po wykupieniu owej domeny możemy zaznaczyć opcję by sama się wykupywała automatycznie po wygaśnięciu okresu, który możemy sami wybrać. Następnie możemy powrócić co aplikacji **`Amazon CloudFront`** i w naszej dystrybucji w sekcji **`General`** znaleźć **`Settings`** i wybrać **`Edit`**. W sekcji edycji ustawień będziemmy mogli wkleić naszą alternatywną domenę w linijce zatytuowanej **`Alternate domain nammme (CNAME) - optional`**. Poniżej znajdziemy **`Custom SSL certificate - optional`**, gdzie można wybrać opcję **`Request certificate`**, gdzie będziemy mogli stworzyć nasz certyfikat. Gdy stworzymy nasz certyfikat, powinien on się wyświetlać do wyboru. Gotowe.
