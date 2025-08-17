@@ -12,7 +12,7 @@ Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
 Moje **`CV`** można zobaczyć pod linkiem:
 
 ```
-[https://d2wbjk2ar3yew1.cloudfront.net/](https://konradlesny-cv.com/)
+https://konradlesny-cv.com
 ```
 
 ## Jak postawić statyczną stronę, korzystająć z AWS?
