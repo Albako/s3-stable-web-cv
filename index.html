@@ -3,83 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moje Portfolio - Konrad Lesny</title>
+    <title>CV - Konrad Leśny</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Witaj</h1>
-        <p>Certyfikowany AWS Cloud Practitioner</p>
-        <p>GtiHub: https://github.com/Albako</p>
-        <p>LinkedIn: https://linkedin.com/in/klesny</p>
-    </header>
+    <div class="cv-container">
+        <aside class="left-column">
+            <img src="images/IMG_7299.jpg" alt="Zdjęcie profilowe" class="profile-pic">
 
-    <main>
-        <section class="about">
-            <h2>O mnie</h2>
-            <p>Nazywam się Konrad Leśny. Pasjonuję się rozwiązaniami chmurowymi i projektami związanymi z AI.</p>
-        </section>
+            <section class="contact-info">
+                <h2>Kontakt</h2>
+                <p><i class="fa-solid fa-envelope"></i> konradl.kontakt@pm.me</p>
+                <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Albako">github.com/Albako</a></p>
+                <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/klesny">linkedin.com/in/klesny</a></p>
+            </section>
 
-        <section class="work-experience">
-            <h2>Doświadczenie zawodowe</h2>
-            <div class="work-experience-card">
-                <h3>Kierownik sprzedaży</h3>
-                <p>Interseller s.c.</p>
-                <p>Pełen etat - Wrocław</p>
-                <p>11.2022 - obecnie</p>
-            </div>
-            <div class="work-experience-card">
-                <h3>Specjalista ds. sprzedaży</h3>
-                <p>Interseller s.c.</p>
-                <p>Pełen etat - Wrocław</p>
-                <p>07.2020 - 10.2022</p>
-            </div>
-            <div class="work-experience-card">
-                <h3>Specjalista ds. sprzedaży</h3>
-                <p>Euro-phone sp. z o.o.</p>
-                <p>Pełen etat - Wrocław</p>
-                <p>03.2019 - 07.2020</p>
-            </div>
-        </section>
+            <section class="about">
+                <h2>O mnie</h2>
+                <p>Nazywam się Konrad Leśny. Pasjonuję się rozwiązaniami chmurowymi i projektami związanymi z AI. Certyfikowany AWS Cloud Practitioner.</p>
+            </section>
+        </aside>
 
-        <section class="education">
-            <h2>Wykształcenie</h2>
-            <div class="education-card">
-                <h3>Uniwersytet WSB Merito Wrocław</h3>
-                <p>Inżynier (Inż.), Architekt rozwiązań IT w chmurze obliczeniowej - Informatyka</p>
-                <p>10.2023 - obecnie</p>
-            <div class="education-card">
-                <h3>Uniwersytet Ekonomiczny we Wrocławiu</h3>
-                <p>Licencjat, Informatyka w biznesie</p>
-                <p>10.2018 - 02.2020 (nieukończone)</p>
-        </section>
+        <main class="right-column">
+            <header>
+                <h1>Konrad Leśny</h1>
+                <p>Cloud & AI Enthusiast</p>
+            </header>
 
-        <section class="certificates">
-            <h2>Certifikaty</h2>
-            <div class="certificates-card">
-                <h3>AWS Certified Cloud Practitioner</h3>
-                <p>CLF-C02</p>
-                <p>ID: 6cfe39404bfb4d93b90cd4f24f6395db
-                <p>08.2025 - 08.2028</p>
-        </section>
+            <section class="work-experience">
+                <h2>Doświadczenie zawodowe</h2>
+                <div class="card">
+                    <h3>Kierownik sprzedaży</h3>
+                    <p class="company">Interseller s.c. | 11.2022 - obecnie</p>
+                    <p class="location">Pełen etat - Wrocław</p>
+                </div>
+                <div class="card">
+                    <h3>Specjalista ds. sprzedaży</h3>
+                    <p class="company">Interseller s.c. | 07.2020 - 10.2022</p>
+                    <p class="location">Pełen etat - Wrocław</p>
+                </div>
+                <div class="card">
+                    <h3>Specjalista ds. sprzedaży</h3>
+                    <p class="company">Euro-phone sp. z o.o. | 03.2019 - 07.2020</p>
+                    <p class="location">Pełen etat - Wrocław</p>
+                </div>
+            </section>
 
-        <section class="projects">
-            <h2>Moje Projekty</h2>
-            <div class="project-card">
-                <h3>Statyczna Strona na S3</h3>
-                <p>Prosta strona WWW hostowana na Amazon S3, dystrybuowana globalnie przez CloudFront z certyfikatem SSL. To właśnie strona, którą teraz oglądasz.</p>
-            </div>
-            <div class="project-card">
-                <h3>Lokalny asystent AI</h3>
-                <p>Lokalny asystent AI (GPT like). Projekt był prowadzony na potrzeby kursu Narzędzia do automatyzacji budowy oprogramowania. </p>
-            </div>
-        </section>
-    </main>
+            <section class="education">
+                <h2>Wykształcenie</h2>
+                <div class="card">
+                    <h3>
+                        <img src="images/merito.png" alt="Logo WSB Merito" class="logo">
+                        Uniwersytet WSB Merito Wrocław
+                    </h3>
+                    <p>Inżynier (Inż.), Architekt rozwiązań IT w chmurze obliczeniowej - Informatyka</p>
+                    <p>10.2023 - obecnie</p>
+                </div>
+            </section>
 
-    <footer>
-        <p>Kontakt: konradl.kontakt@pm.me</p>
-    </footer>
+            <section class="certificates">
+                <h2>Certyfikaty</h2>
+                <div class="card">
+                     <h3>
+                        <img src="images/aws-cloud-practitioner-s.png" alt="Logo AWS" class="logo">
+                        AWS Certified Cloud Practitioner
+                    </h3>
+                    <p>ID: 6cfe39404bfb4d93b90cd4f24f6395db</p>
+                    <p>Ważny: 08.2025 - 08.2028</p>
+                </div>
+            </section>
+
+            <section class="projects">
+                <h2>Moje Projekty</h2>
+                <div class="card">
+                    <h3>Statyczna Strona na S3 (To CV)</h3>
+                    <p>Prosta strona WWW hostowana na Amazon S3, dystrybuowana globalnie przez CloudFront z certyfikatem SSL.</p>
+                </div>
+                <div class="card">
+                    <h3>Lokalny asystent AI</h3>
+                    <p>Lokalny asystent AI (GPT like). Projekt był prowadzony na potrzeby kursu Narzędzia do automatyzacji budowy oprogramowania.</p>
+                </div>
+            </section>
+        </main>
+    </div>
 
 </body>
 </html>
