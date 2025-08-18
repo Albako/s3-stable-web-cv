@@ -5,7 +5,7 @@ Strona została w pełni postawiona w S3 w chmurze AWS. Przedstawia ona krótki 
 Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
 1. **`Amazon S3`**: Na nim znajdują się wymagane pliki do hostowania strony.
 2. **`Amazon CloudFront`**: Dzięki niemu pliki znajdujące sie w **`S3`** są hostowane jako strona **`www`**.
-3. **`Amazon Route 53`**: Dzięki temu serwisowi udało mi wykupić alternatywną domenę (zamiast generycznego linku od **`CloudFront`** mój link jest bardziej profesjonalny).
+3. **`Amazon Route 53`**: Dzięki temu serwisowi udało mi wykupić alternatywną domenę zamiast generycznego linku od **`CloudFront`**, dzięki czemu adres wygląda bardziej profesjonalnie.
 4. **`Ammazon Certificates`**: Bez certyfikatu wykupionego w tej usłudze, nie udało by mi się uruchomić mojej strony pod customową domeną.
 5. **`index.html`**: Zawartość strony.
 6. **`style.css`**: Styl strony.
