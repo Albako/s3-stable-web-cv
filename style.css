@@ -32,7 +32,19 @@ body {
     border-radius: 50%;
     border: 5px solid #3498db;
     object-fit: cover;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+}
+
+.left-column header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.left-column header p {
+    margin: 5px 0 20px;
+    font-size: 0.75rem;
+    color: #bdc3c7;
 }
 
 .left-column h2 {
@@ -40,6 +52,7 @@ body {
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
     margin-top: 30px;
+    font-size: 1.3rem;
 }
 
 .contact-info p {
@@ -48,7 +61,7 @@ body {
 }
 
 .contact-info i {
-    margin-right: 10px;
+    margin-right: 3px;
     color: #3498db;
 }
 
@@ -62,25 +75,23 @@ body {
     color: #3498db;
 }
 
+.left-column .contact-info, .left-column .about {
+    text-align: left;
+}
+
+.left-column .about p {
+    font-size: 0.9rem;
+}
+
+.left-column .about + .about p {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    line-height: 1.4;
+}
+
 .right-column {
     flex: 1;
     padding: 40px;
-}
-
-.right-column header {
-    margin-bottom: 10px;
-}
-
-.right-column header h1 {
-    margin: 0;
-    font-size: 3rem;
-    color: #2c3e50;
-}
-
-.right-column header p {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #555;
 }
 
 .right-column h2 {
@@ -89,7 +100,7 @@ body {
     padding-bottom: 10px;
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
 }
 
 .right-column section {
@@ -109,6 +120,11 @@ body {
     color: #2c3e50;
     display: flex;
     align-items: center;
+    font-size: 1rem;
+}
+
+.card p {
+    font-size: 0.9rem;
 }
 
 .card .company, .card .location {
@@ -122,20 +138,6 @@ body {
     width: auto;
     margin-right: 15px;
     vertical-align: middle;
-}
-
-.left-column .contact-info, .left-column .about {
-    text-align: left;
-}
-
-.left-column .about p {
-    font-size: 0.9rem;
-}
-
-.left-column .about + .about p {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    line-height: 1.4;
 }
 
 .gdpr h2 {
@@ -206,9 +208,17 @@ body {
     }
 
     .left-column {
-        flex: 0 0 29% !important;
+        flex: 0 0 20% !important;
         color: #ecf0f1 !important;
         padding: 40px;
+    }
+
+    .left-column h2 {
+        font-size: 1rem;
+    }
+
+    .left-column section p {
+        font-size: 0.75rem !important;
     }
 
     .right-column {
@@ -223,6 +233,10 @@ body {
     .card {
         page-break-inside: avoid;
         border-left: 2px solid #eee;
+    }
+
+    .logo {
+        height: 20px !important;
     }
 
     a {
