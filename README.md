@@ -7,8 +7,10 @@ Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
 2. **`Amazon CloudFront`**: Dzięki niemu pliki znajdujące sie w **`S3`** są hostowane jako strona **`www`**.
 3. **`Amazon Route 53`**: Dzięki temu serwisowi udało mi wykupić alternatywną domenę zamiast generycznego linku od **`CloudFront`**, dzięki czemu adres wygląda bardziej profesjonalnie.
 4. **`Ammazon Certificates`**: Bez certyfikatu wykupionego w tej usłudze, nie udało by mi się uruchomić mojej strony pod customową domeną.
-5. **`index.html`**: Zawartość strony.
-6. **`style.css`**: Styl strony.
+5. **`index.html`**: Zawartość i budowa strony.
+6. **`style.css`**: Styl i wygląd strony, a także wydruku (wygenerowania CV w formie PDF).
+7. **`translations.js`**: Tłumaczenie zawartości pomiędzy językami PL i ENG.
+8. **`script.js`**: Skrypt umożliwiający przełączanie strony pomiędzy PL i ENG.
 
 ## Aktywny link
 Moje **`CV`** można zobaczyć pod linkiem:
