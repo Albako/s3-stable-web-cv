@@ -12,25 +12,28 @@
 
     <div class="cv-container">
         <aside class="left-column">
+            <div class="language-switcher">
+                <button id="lang-toggle-btn"></button>
+            </div>
             <img src="images/IMG_2164.jpg" alt="Zdjęcie profilowe" class="profile-pic">
             <header>
                 <h1>Konrad Leśny</h1>
-                <p>Cloud & AI Enthusiast</p>
+                <p id="job-title">Cloud & AI Enthusiast</p>
             </header>
             <section class="contact-info">
-                <h2>Kontakt</h2>
+                <h2 id="contact-header">Kontakt</h2>
                 <p><i class="fa-solid fa-envelope"></i> konradl.kontakt@pm.me</p>
                 <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Albako" target="_blank" rel="noopener noreferrer">github.com/Albako <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 <p><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/klesny" target="_blank" rel="noopener noreferrer">linkedin.com/in/klesny <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
             </section>
 
             <section class="about">
-                <h2>O mnie</h2>
-                <p>Nazywam się Konrad Leśny. Pasjonuję się rozwiązaniami chmurowymi i projektami związanymi z AI. Certyfikowany AWS Cloud Practitioner.</p>
+                <h2 id="about-me-header">O mnie</h2>
+                <p id="about-me-text">Nazywam się Konrad Leśny. Pasjonuję się rozwiązaniami chmurowymi i projektami związanymi z AI. Certyfikowany AWS Cloud Practitioner.</p>
             </section>
-	    
+
 	    <section class="about">
-		<h2>Umiejętności i technologie</h2>
+		<h2 id="skills-header">Umiejętności i technologie</h2>
 		<p>Amazon Web Services (AWS)</p>
 		<p>Cloud Computing</p>
 		<p>Cloud services</p>
@@ -43,9 +46,9 @@
 	    </section>
 
 	    <section class="about">
-		<h2>Języki obce</h2>
-		<p>Polski - ojczysty</p>
-		<p>Angielski - C1</p>
+		<h2 id="languages-header">Języki obce</h2>
+		<p id="polish-lang">Polski - ojczysty</p>
+		<p id="english-lang">Angielski - C1</p>
 	    </section>
 
         </aside>
@@ -53,9 +56,9 @@
         <main class="right-column">
 
             <section class="work-experience">
-                <h2>Doświadczenie zawodowe</h2>
+                <h2 id="experience-header">Doświadczenie zawodowe</h2>
                 <div class="card">
-                    <h3>Kierownik sprzedaży</h3>
+                    <h3 id="job1-title">Kierownik sprzedaży</h3>
                     <p class="company">Interseller s.c. | 11.2022 - obecnie</p>
 		    <p class="company">
 			<img src="images/t-mobile.png" alt="Logo T-Mobile" class="logo">
@@ -63,7 +66,7 @@
                     <p class="location">Wrocław</p>
                 </div>
                 <div class="card">
-                    <h3>Specjalista ds. sprzedaży</h3>
+                    <h3 id="job2-title">Specjalista ds. sprzedaży</h3>
                     <p class="company">Interseller s.c. | 07.2020 - 10.2022</p>
 		    <p class="company">
                         <img src="images/t-mobile.png" alt="Logo T-Mobile" class="logo">
@@ -71,7 +74,7 @@
                     <p class="location">Wrocław</p>
                 </div>
                 <div class="card">
-                    <h3>Specjalista ds. sprzedaży</h3>
+                    <h3 id="job3-title">Specjalista ds. sprzedaży</h3>
                     <p class="company">Euro-phone sp. z o.o. | 03.2019 - 07.2020</p>
 		    <p class="company">
                         <img src="images/t-mobile.png" alt="Logo T-Mobile" class="logo">
@@ -81,49 +84,50 @@
             </section>
 
             <section class="education">
-                <h2>Wykształcenie</h2>
+                <h2 id="education-header">Wykształcenie</h2>
                 <div class="card">
                     <h3>
                         <img src="images/merito.png" alt="Logo WSB Merito" class="logo">
                         Uniwersytet WSB Merito Wrocław
                     </h3>
-                    <p>Inżynier (Inż.), Architekt rozwiązań IT w chmurze obliczeniowej - Informatyka</p>
-                    <p>10.2023 - obecnie</p>
+                    <p id="education-desc">Inżynier (Inż.), Architekt rozwiązań IT w chmurze obliczeniowej - Informatyka</p>
+                    <p id="education-date">10.2023 - obecnie</p>
                 </div>
             </section>
 
             <section class="certificates">
-                <h2>Certyfikaty</h2>
+                <h2 id="certificates-header">Certyfikaty</h2>
                 <div class="card">
                      <h3>
                         <img src="images/aws-cloud-practitioner-s.png" alt="Logo AWS" class="logo">
                         AWS Certified Cloud Practitioner
                     </h3>
                     <p><i class="fa-solid fa-award"></i> ID: 6cfe39404bfb4d93b90cd4f24f6395db</p>
-                    <p>Ważny: 08.2025 - 08.2028</p>
-		    <p><i class="fa-solid fa-award"></i> <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/6cfe39404bfb4d93b90cd4f24f6395db" target="_blank" rel="noopener noreferrer">Pokaż poświadczenie <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+                    <p id="certificate-date">Ważny: 08.2025 - 08.2028</p>
+		    <p><i class="fa-solid fa-award"></i> <a href="https://cp.certmetrics.com/amazon/en/public/verify/credential/6cfe39404bfb4d93b90cd4f24f6395db" target="_blank" rel="noopener noreferrer" id="certificate-link">Pokaż poświadczenie <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
             </section>
 
             <section class="projects">
-                <h2>Moje Projekty</h2>
+                <h2 id="projects-header">Moje Projekty</h2>
                 <div class="card">
-                    <h3>Statyczna strona web hostowana na Amazon S3</h3>
-                    <p>Prosta strona WWW z customową domeną od Route 53, hostowana na Amazon S3, dystrybuowana globalnie przez CloudFront z certyfikatem SSL.</p>
+                    <h3 id="project1-title">Statyczna strona web hostowana na Amazon S3</h3>
+                    <p id="project1-desc">Prosta strona WWW z customową domeną od Route 53, hostowana na Amazon S3, dystrybuowana globalnie przez CloudFront z certyfikatem SSL.</p>
 		    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Albako/s3-stable-web-cv" target="_blank" rel="noopener noreferrer">Albako/s3-stable-web-cv <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
                 <div class="card">
-                    <h3>Lokalny asystent AI</h3>
-                    <p>Lokalny asystent AI (GPT like), hostowany w sieci lokalnej przy użyciu Ollama dla dystrybuowania modelami LLM, Dockera dla backendu i Open Web-UI dla frontendu. Byłem odpowiedzialny za wymyślenie projektu, kierowanie zespołem, postawieniem nowego backendu, a także za testowanie działania naszego lokalnego chatbota. Projekt był prowadzony na potrzeby kursu Narzędzia do automatyzacji budowy oprogramowania.</p>
+                    <h3 id="project2-title">Lokalny asystent AI</h3>
+                    <p id="project2-desc">Lokalny asystent AI (GPT like), hostowany w sieci lokalnej przy użyciu Ollama dla dystrybuowania modelami LLM, Dockera dla backendu i Open Web-UI dla frontendu. Byłem odpowiedzialny za wymyślenie projektu, kierowanie zespołem, postawieniem nowego backendu, a także za testowanie działania naszego lokalnego chatbota. Projekt był prowadzony na potrzeby kursu Narzędzia do automatyzacji budowy oprogramowania.</p>
 		    <p><i class="fa-brands fa-github"></i> <a href="https://github.com/Albako/local-llm-assistant" target="_blank" rel="noopener noreferrer">Albako/local-llm-assistant <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
                 </div>
             </section>
-	    
+
 	    <section class="gdpr">
-		<h2>Zgoda RODO</h2>
-		<p>Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)</p>
+		<h2 id="gdpr-header">Zgoda RODO</h2>
+		<p id="gdpr-text">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)</p>
         </main>
     </div>
-
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

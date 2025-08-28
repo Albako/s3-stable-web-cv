@@ -26,6 +26,27 @@ body {
     text-align: center;
 }
 
+.language-switcher {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#lang-toggle-btn {
+background-color: #3498db;
+color: white;
+padding: 8px 12px;
+font-size: 14px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+min-width: 50px;
+transition: background-color 0.3s;
+}
+
+#lang-toggle-btn:hover {
+background-color: #2980b9;
+}
+
 .profile-pic {
     width: 150px;
     height: 150px;
@@ -185,6 +206,10 @@ body {
 
     .credential-button {
         display: none;
+    }
+
+    .language-switcher {
+        display: none !important;
     }
 
     @page {
