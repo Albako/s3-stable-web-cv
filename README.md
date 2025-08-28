@@ -1,5 +1,5 @@
 # Statyczna strona z moim CV
-Strona została w pełni postawiona w S3 w chmurze AWS. Przedstawia ona krótki opis moich dotychczasowych osiągnięć.
+Strona została w pełni postawiona w S3 w chmurze AWS. Przedstawia ona krótki opis moich dotychczasowych osiągnięć. Projekt może posłużyć jako **`OFFLINE CV GENERATOR`**. Wystarczy otworzyć plik **`index.html`** i kliknąć **`drukuj`** w naszej przeglądarce. Jeśli chcemy przerobić owe CV pod siebie, to proszę śmiało edytować **`index.html`** i **`translations.js`** pod swoje dane, następnie podmienić grafiki w `/images` i gotowe. Mamy własne **`CV`** gotowe do przemielenia przez automatyczny system zaimplementowany w działach `HR`.
 
 ## Architektura
 Do użycia i postawienia strony **`www`** zostały przeze mnie użyte:
