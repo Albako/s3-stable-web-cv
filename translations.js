@@ -44,7 +44,9 @@ const translations = {
         'project2-desc': 'Prosta strona WWW z customową domeną od Route 53, hostowana na Amazon S3, dystrybuowana globalnie przez CloudFront z certyfikatem SSL.',
         'project1-title': 'Lokalny asystent AI',
         'project1-desc': 'Lokalny asystent AI (GPT like), hostowany w sieci lokalnej przy użyciu Ollama dla dystrybuowania modelami LLM, Dockera dla backendu i Open Web-UI dla frontendu. Byłem odpowiedzialny za wymyślenie projektu, kierowanie zespołem, postawieniem nowego backendu, a także za testowanie działania naszego lokalnego chatbota. Projekt był prowadzony na potrzeby kursu Narzędzia do automatyzacji budowy oprogramowania.',
+        'project1-wsb-connection': 'Powiązane z: Uniwersytet WSB Merito Wrocław',
         'project3-desc':'Byłem odpowiedzialny za stworzenie aplikacji kontrolującej do projektu WindowLogger',
+        'project3-windowlogger-connection': 'Powiązane z: Taskscape Ltd',
         'gdpr-header': 'Zgoda RODO',
         'gdpr-text': 'Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)'
     },
@@ -92,7 +94,9 @@ const translations = {
         'project2-desc': 'A simple website with a custom domain from Route 53, hosted on Amazon S3, distributed globally by CloudFront with an SSL certificate.',
         'project1-title': 'Local AI assistant',
         'project1-desc': 'Local AI assistant (GPT like), hosted on a local network using Ollama for distributing LLM models, Docker for the backend and Open Web-UI for the frontend. I was responsible for conceiving the project, leading the team, setting up a new backend, as well as testing the operation of our local chatbot. The project was carried out for the course Tools for automating software construction.',
+        'project1-wsb-connection': 'Associated with WSB Merito University in Wroclaw',
         'project3-desc':'I was responsible for creating the Controller App for the WindowLogger Project.',
+        'project3-windowlogger-connection': 'Associated with Taskscape Ltd',
         'gdpr-header': 'GDPR consent',
         'gdpr-text': 'I consent to the processing of my personal data for the purposes of the recruitment process (in accordance with the Act of 10 May 2018 on the protection of personal data and in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (GDPR)'
     }
