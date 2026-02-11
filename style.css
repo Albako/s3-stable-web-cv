@@ -96,7 +96,7 @@ background-color: #2980b9;
     color: #3498db;
 }
 
-.left-column .contact-info, .left-column .about {
+.left-column .contact-info, .left-column .about, .left-column .gdpr {
     text-align: left;
 }
 
@@ -268,3 +268,4 @@ background-color: #2980b9;
         text-decoration: none;
     }
 }
+
