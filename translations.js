@@ -109,7 +109,7 @@ const translations = {
         'project1-skills': 'Skills: Linux system administration; Prompt Engineering; Running LLMs in local environments; Hosting AI-Chat within a local network; Port mapping; Git branch management',
         'project1-technology': 'Technologies: Linux; Ollama; Open WebUI; Docker; Docker Compose; API; Git',
         'project1-wsb-connection': 'Associated with WSB Merito University in Wroclaw',
-        'project3-desc':'I was responsible for creating the Controller App for the WindowLogger Project.',
+        'project3-desc':'Responsible for the development of the WindowLogger project, including building the GUI controller app, optimizing the project for production (Release), and developing the application installer.',
         'project3-skills': 'Skills: C#/.NET; Git',
         'project3-windowlogger-connection': 'Associated with Taskscape Ltd',
         'project4-desc': 'Simple home server built using an Asus 556LD laptop and a keepLINK 2.5Gbps managed switch. The server has a static private IP address and runs Debian (headless/CLI-only) as the operating system. Server management is performed within the local network and via VPN. I use the Cockpit project for machine management and CasaOS for configuring services such as AdGuard or Jellyfin, which utilizes application containerization.',
